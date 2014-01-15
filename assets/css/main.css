@@ -20,7 +20,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: #333;
+    color: #6aa2de;
 }
 
 /* Paragraph & Typographic */
@@ -38,11 +38,11 @@ a {
     color: #f85c37;
     word-wrap: break-word;
 
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    /*-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;*/
 }
 
 a:hover,
@@ -52,14 +52,14 @@ a:focus {
     outline: 0;
 }
 
-a:before,
+/*a:before,
 a:after {
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
-}
+}*/
 
 /* Navigation Bar */
 .navbar {
@@ -69,7 +69,7 @@ a:after {
     border-bottom: 0px solid #575f6a;
     text-transform: uppercase;
     color: black;
-    box-shadow: 0px 1px 50px #5E5E5E;
+    box-shadow: 0px 3px 10px #5E5E5E;
 }
 
 .navbar-inverse {
@@ -97,9 +97,8 @@ a:after {
 .navbar-inverse .navbar-brand img {
     height: 28px;
     /*margin: 0 auto;*/
-    padding-top: 0;
+    padding-top: 2px;
     margin-top: -10px;
-    /*padding-bottom: 4px;*/
 }
 
 .navbar-inverse .navbar-right {
@@ -116,6 +115,94 @@ a:after {
     color: #bdbdbd;
 }
 
+.navbar-inverse .navbar-right .icon a {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        background-color: #6aa2de !important;
+        color: white !important;
+    }
+    .dropdown:hover {
+        background-color: #6aa2de;
+        color: white !important;
+    }
+
+    .dropdown:hover a {
+        color: white !important;
+    }
+
+    .dropdown:hover a:hover {
+        color: white !important;
+    }
+
+    .navbar .navbar-nav .dropdown-menu {
+      position: absolute;
+      float: left;
+      background-color: #6aa2de;
+      border: 1px solid #6aa2de;
+      border-width: 1px;
+      border-radius: 1px;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li > a {
+      color: white;
+    }
+    .navbar .navbar-nav .dropdown-menu > li > a:hover,
+    .navbar .navbar-nav .dropdown-menu > li > a:focus,
+    .navbar .navbar-nav .dropdown-menu > .active > a,
+    .navbar .navbar-nav .dropdown-menu > .active > a:hover,
+    .navbar .navbar-nav .dropdown-menu > .active > a:focus {
+      color: #6aa2de !important;
+      background-color: white !important;
+    }
+    .navbar .navbar-nav .dropdown-menu > .disabled > a,
+    .navbar .navbar-nav .dropdown-menu > .disabled > a:hover,
+    .navbar .navbar-nav .dropdown-menu > .disabled > a:focus {
+      color: #999 !important;
+      background-color: transparent !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .dropdown:hover {
+        background-color: #6aa2de;
+        color: white !important;
+    }
+
+    .dropdown:hover a {
+        color: white !important;
+    }
+
+    .dropdown:hover a:hover {
+        color: white !important;
+    }
+
+    .navbar .navbar-nav .open .dropdown-menu {
+      background-color: #6aa2de;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+      color: white;
+    }
+    .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #6aa2de !important;
+      background-color: white !important;
+    }
+    .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+      color: #999 !important;
+      background-color: transparent !important;
+    }
+}
 
 /* Header Wrap */
 #headerwrap {
@@ -255,25 +342,8 @@ a:after {
 
 /****** SECTIONS *****/
 .w {
-	padding-top: 20px;
-}
-
-.w h1 {
-    color: #ff7878;
-    font-weight: 500;
-}
-
-.w h4 {
-	font-weight: 700;
-}
-
-.w h3 {
-    font-weight: 400;
-}
-
-.w i {
-	color: #ff7878;
-	font-size: 30px;
+	margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 

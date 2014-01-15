@@ -4820,7 +4820,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: #6aa2de;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
@@ -4840,9 +4840,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-bottom-color: #ffffff;
 }
 
+/* changing dropdown color */
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #080808;
+    border-color: #6aa2de;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #999999;
@@ -4856,7 +4857,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #080808;
+    background-color: #6aa2de;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -6489,6 +6490,8 @@ button.close {
   width: 10px;
   height: 10px;
   margin: 1px;
+  margin-left: 8px;
+  margin-right: 8px;
   text-indent: -999px;
   cursor: pointer;
   background-color: #000 \9;
@@ -6498,9 +6501,9 @@ button.close {
 }
 
 .carousel-indicators .active {
-  width: 12px;
+  /*width: 12px;
   height: 12px;
-  margin: 0;
+  margin: 0;*/
   background-color: #ffffff;
 }
 
