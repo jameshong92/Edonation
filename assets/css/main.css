@@ -35,7 +35,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: #6aa2de;
     word-wrap: break-word;
 
     /*-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -47,7 +47,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: #0088cc;
     text-decoration: none;
     outline: 0;
 }
@@ -65,16 +65,22 @@ a:after {
 .navbar {
 	font-weight: 800;
 	font-size: 14px;
-    border-top: 0px solid #6b727c;
-    border-bottom: 0px solid #575f6a;
+    border: none;
     text-transform: uppercase;
-    color: black;
+    color: #6aa2de;
     box-shadow: 0px 3px 10px #5E5E5E;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        height: 50px;
+    }
 }
 
 .navbar-inverse {
 	background: white;
 	border-color: white;
+    border-bottom: none;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -82,7 +88,7 @@ a:after {
 }
 
 .navbar-inverse .navbar-brand {
-	color: black;
+	color: #6aa2de;
 	font-weight: bolder;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -101,18 +107,16 @@ a:after {
     margin-top: -10px;
 }
 
-.navbar-inverse .navbar-right {
-    /*margin-top: 6px;*/
-    /*vertical-align: center;*/
-}
-
 .navbar-inverse .navbar-collapse .navbar-right a {
     font-size: 14px;
-    color: black;
+    color: #6aa2de;
 }
 
 .navbar-inverse .navbar-collapse .navbar-right a:hover {
-    color: #bdbdbd;
+    color: white;
+    background: #6aa2de;
+    border-color: #6aa2de;
+    /*border-bottom: 1px solid #6aa2de;*/
 }
 
 .navbar-inverse .navbar-right .icon a {
@@ -124,6 +128,7 @@ a:after {
 
 @media (min-width: 768px) {
     .dropdown:hover .dropdown-menu {
+        border-top: 1px solid white;
         display: block;
         background-color: #6aa2de !important;
         color: white !important;
@@ -334,18 +339,42 @@ a:after {
 
 /* Footer Wrap */
 #f {
-	padding-top: 10px;
+	padding-top: 0px;
+    margin-top: 0px;
 	padding-bottom: 30px;
     color: black;
     font-size: 14px;
 }
 
 /****** SECTIONS *****/
+.ph {
+    /*text-align: center;*/
+    margin-top: 70px;
+}
+
+.ph h1 {
+    margin: 0;
+}
+
 .w {
 	margin-top: 70px;
     margin-bottom: 70px;
 }
 
+.w h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.w img {
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.w p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 
 .wb {
 	padding-top: 35px;
@@ -371,30 +400,6 @@ a:after {
 }
 
 /****** MAIN ******/
-.myButton {
-    background-color:#3090C7;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-    border:1px solid #ffffff;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Verdana;
-    font-size:12px;
-    padding:6px 15px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #b23e35;
-}
-.myButton:hover {
-    color:white;
-    background-color:#2B60DE;
-}
-.myButton:active {
-    position:relative;
-    top:1px;
-}
-
 .carousel {
     height: 500px;
     overflow: hidden;
@@ -476,48 +481,33 @@ a:after {
     padding-top: 8px;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
 }
 .carouselButton:hover {
     background-color:#f6f6f6;
+    color: black;
 }
 
-/****** ABOUT US ******/
-#about {
-    background: url(../img/about_bg.jpg) no-repeat center top;
-    margin-top: -10px;
-    padding-top:20px;
-    text-align:center;
-    background-attachment: relative;
-    background-position: top center;
-    min-height: 450px;
-    width: 100%;
-    background-color: black;
-    opacity: 0.8;
-    
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#about h1 {
-    margin-top: 150px;
-    color: white;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 3px;
+/****** PROJECTS ******/
+.projectButton {
+    background-color:#ffffff;
+    border:1px solid black;
+    display:inline-block;
+    cursor:pointer;
+    color:black;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    width: 200px;
+    height: 40px;
+    text-decoration:none;
     text-transform: uppercase;
-    text-shadow: 1px 1px 3px black;
-    font-family: 'Open Sans';
-    opacity: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 10px 20px 0px;
+    text-align: center;
 }
-
-#exec img, #ocm img {
-    width: 150px;
-    height: 150px;
+.projectButton:hover {
+    background-color:#f6f6f6;
+    color: black;
 }
