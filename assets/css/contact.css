@@ -20,7 +20,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: #6aa2de;
+    color: #333;
 }
 
 /* Paragraph & Typographic */
@@ -35,52 +35,46 @@ p {
 
 /* Links */
 a {
-    color: #6aa2de;
+    color: #f85c37;
     word-wrap: break-word;
 
-    /*-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;*/
+    transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 a:hover,
 a:focus {
-    color: #0088cc;
+    color: #7b7b7b;
     text-decoration: none;
     outline: 0;
 }
 
-/*a:before,
+a:before,
 a:after {
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
-}*/
+}
 
 /* Navigation Bar */
 .navbar {
 	font-weight: 800;
 	font-size: 14px;
-    border: none;
+    border-top: 0px solid #6b727c;
+    border-bottom: 0px solid #575f6a;
     text-transform: uppercase;
-    color: #6aa2de;
-    box-shadow: 0px 3px 10px #5E5E5E;
-}
-
-@media (min-width: 992px) {
-    .navbar {
-        height: 50px;
-    }
+    color: black;
+    box-shadow: 0px 1px 50px #5E5E5E;
 }
 
 .navbar-inverse {
 	background: white;
 	border-color: white;
-    border-bottom: none;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -88,7 +82,7 @@ a:after {
 }
 
 .navbar-inverse .navbar-brand {
-	color: #6aa2de;
+	color: black;
 	font-weight: bolder;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -103,111 +97,25 @@ a:after {
 .navbar-inverse .navbar-brand img {
     height: 28px;
     /*margin: 0 auto;*/
-    padding-top: 2px;
+    padding-top: 0;
     margin-top: -10px;
+    /*padding-bottom: 4px;*/
+}
+
+.navbar-inverse .navbar-right {
+    /*margin-top: 6px;*/
+    /*vertical-align: center;*/
 }
 
 .navbar-inverse .navbar-collapse .navbar-right a {
     font-size: 14px;
-    color: #6aa2de;
+    color: black;
 }
 
 .navbar-inverse .navbar-collapse .navbar-right a:hover {
-    color: white;
-    background: #6aa2de;
-    border-color: #6aa2de;
-    /*border-bottom: 1px solid #6aa2de;*/
+    color: #bdbdbd;
 }
 
-.navbar-inverse .navbar-right .icon a {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-@media (min-width: 768px) {
-    .dropdown:hover .dropdown-menu {
-        border-top: 1px solid white;
-        display: block;
-        background-color: #6aa2de !important;
-        color: white !important;
-    }
-    .dropdown:hover {
-        background-color: #6aa2de;
-        color: white !important;
-    }
-
-    .dropdown:hover a {
-        color: white !important;
-    }
-
-    .dropdown:hover a:hover {
-        color: white !important;
-    }
-
-    .navbar .navbar-nav .dropdown-menu {
-      position: absolute;
-      float: left;
-      background-color: #6aa2de;
-      border: 1px solid #6aa2de;
-      border-width: 1px;
-      border-radius: 1px;
-    }
-    .navbar-inverse .navbar-nav .dropdown-menu > li > a {
-      color: white;
-    }
-    .navbar .navbar-nav .dropdown-menu > li > a:hover,
-    .navbar .navbar-nav .dropdown-menu > li > a:focus,
-    .navbar .navbar-nav .dropdown-menu > .active > a,
-    .navbar .navbar-nav .dropdown-menu > .active > a:hover,
-    .navbar .navbar-nav .dropdown-menu > .active > a:focus {
-      color: #6aa2de !important;
-      background-color: white !important;
-    }
-    .navbar .navbar-nav .dropdown-menu > .disabled > a,
-    .navbar .navbar-nav .dropdown-menu > .disabled > a:hover,
-    .navbar .navbar-nav .dropdown-menu > .disabled > a:focus {
-      color: #999 !important;
-      background-color: transparent !important;
-    }
-}
-
-@media (max-width: 767px) {
-    .dropdown:hover {
-        background-color: #6aa2de;
-        color: white !important;
-    }
-
-    .dropdown:hover a {
-        color: white !important;
-    }
-
-    .dropdown:hover a:hover {
-        color: white !important;
-    }
-
-    .navbar .navbar-nav .open .dropdown-menu {
-      background-color: #6aa2de;
-    }
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-      color: white;
-    }
-    .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
-    .navbar .navbar-nav .open .dropdown-menu > .active > a,
-    .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-    .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: #6aa2de !important;
-      background-color: white !important;
-    }
-    .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
-    .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-    .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-      color: #999 !important;
-      background-color: transparent !important;
-    }
-}
 
 /* Header Wrap */
 #headerwrap {
@@ -339,42 +247,35 @@ a:after {
 
 /* Footer Wrap */
 #f {
-	padding-top: 0px;
-    margin-top: 0px;
+	padding-top: 10px;
 	padding-bottom: 30px;
     color: black;
     font-size: 14px;
 }
 
 /****** SECTIONS *****/
-.ph {
-    /*text-align: center;*/
-    margin-top: 70px;
-}
-
-.ph h1 {
-    margin: 0;
-}
-
 .w {
-	margin-top: 70px;
-    margin-bottom: 70px;
+	padding-top: 20px;
 }
 
-.w h2 {
-    margin-top: 0;
-    margin-bottom: 30px;
+.w h1 {
+    color: #ff7878;
+    font-weight: 500;
 }
 
-.w img {
-    border: 1px solid black;
-    margin-bottom: 50px;
+.w h4 {
+	font-weight: 700;
 }
 
-.w p {
-    margin-top: 20px;
-    margin-bottom: 0;
+.w h3 {
+    font-weight: 400;
 }
+
+.w i {
+	color: #ff7878;
+	font-size: 30px;
+}
+
 
 .wb {
 	padding-top: 35px;
@@ -400,6 +301,30 @@ a:after {
 }
 
 /****** MAIN ******/
+.myButton {
+    background-color:#3090C7;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size:12px;
+    padding:6px 15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+}
+.myButton:hover {
+    color:white;
+    background-color:#2B60DE;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
 .carousel {
     height: 500px;
     overflow: hidden;
@@ -481,39 +406,53 @@ a:after {
     padding-top: 8px;
     margin-left: 10px;
     margin-right: 10px;
-    text-align: center;
 }
 .carouselButton:hover {
     background-color:#f6f6f6;
-    color: black;
 }
 
-/****** PROJECTS ******/
-.projectButton {
-    background-color:#ffffff;
-    border:1px solid black;
-    display:inline-block;
-    cursor:pointer;
-    color:black;
-    font-family:arial;
-    font-size:15px;
-    font-weight:bold;
-    width: 200px;
-    height: 40px;
-    text-decoration:none;
+/****** ABOUT US ******/
+#about {
+    background: url(../img/about_bg.jpg) no-repeat center top;
+    margin-top: -10px;
+    padding-top:20px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: top center;
+    min-height: 450px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#about h1 {
+    margin-top: 150px;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0px 10px 20px 0px;
-    text-align: center;
-}
-.projectButton:hover {
-    background-color:#f6f6f6;
-    color: black;
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Open Sans';
+    opacity: 1;
 }
 
+#exec img, #ocm img {
+    width: 150px;
+    height: 150px;
+}
 
-/****** contact.html ******/
+/****** contact ******/
 
 /* social footer */
 #sf {
