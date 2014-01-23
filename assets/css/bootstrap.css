@@ -344,6 +344,13 @@ img {
   vertical-align: middle;
 }
 
+#org-pic {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+}
+
 .img-responsive {
   display: block;
   height: auto;
