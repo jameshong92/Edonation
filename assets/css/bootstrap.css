@@ -86,6 +86,8 @@ hr {
        box-sizing: content-box;
 }
 
+
+
 mark {
   color: #000;
   background: #ff0;
@@ -372,6 +374,12 @@ img {
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.featurette-divider {
+  margin-top: 80px;
+  margin-bottom: 80px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
