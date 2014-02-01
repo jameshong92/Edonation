@@ -610,6 +610,7 @@ a:after {
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    border: none;
 }
 
 @media (max-width: 767px) {
